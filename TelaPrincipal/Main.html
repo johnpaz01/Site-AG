@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="pt">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AG</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+        integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="/TelaPrincipal/CSS/Main.css" />
+</head>
+
+<body>
+    <nav id="sidebar">
+        <div id="sidebar_content">
+            <div id="user">
+                <img src="/TelaPrincipal/img/avata.jpeg" id="user_avatar" alt="Avatar">
+                <p id="user_infos">
+                    <span class="item-description">
+                        User algreen
+                    </span>
+                    <span class="item-description" id="extra">
+                        Contrato restante:
+                    </span>
+                </p>
+            </div>
+
+            <ul id="side_items">
+                <li class="side-item">
+                    <a href="#">
+                        <i class="fa-solid fa-house-chimney"></i>
+                        <span class="item-description">
+                            Início
+                        </span>
+                    </a>
+                </li>
+
+
+                <li class="side-item active">
+                    <a href="#">
+                        <i class="fa-regular fa-user"></i>
+                        <span class="item-description">
+                            Perfil
+                        </span>
+                    </a>
+                </li>
+                <li class="side-item">
+                    <a href="#">
+                        <i class="fa-solid fa-chart-line"></i>
+                        <span class="item-description">
+                            Dashboard
+                        </span>
+                    </a>
+                </li>
+
+                <li class="side-item">
+                    <a href="#">
+                        <i class="fa-regular fa-square-plus"></i>
+                        <span class="item-description">
+                            Publicar
+                        </span>
+                    </a>
+                </li>
+
+
+                <li class="side-item">
+                    <a href="#">
+                        <i class="fa-regular fa-message"></i>
+                        <span class="item-description">
+                            Mensagens
+                        </span>
+                    </a>
+                </li>
+                <li class="side-item">
+                    <a href="#">
+                        <i class="fa-regular fa-envelope"></i>
+                        <span class="item-description">
+                            SAC
+                        </span>
+                    </a>
+                </li>
+
+
+
+                <button id="open_btn">
+                    <i id="open_btn_icon" class="fa-solid fa-chevron-right"></i>
+                </button>
+        </div>
+        <div id="logout">
+            <button style="justify-content: center" id="logout_btn">
+                <i class="fa-solid fa-right-from-bracket"></i>
+                <span class="item-description">
+                    Sair
+                </span>
+            </button>
+        </div>
+
+    </nav>
+
+
+
+    <main id="inicio">
+
+    </main>
+
+
+
+    </main>
+
+
+
+    <main id="inicio">
+        <h1>Perfil</h1>
+    </main>
+
+
+    <main id="dashboard">
+        <h1>Painel de Controle</h1>
+    </main>
+
+    <main id="publicacao" class="publi">
+        <div class="logo">
+            <h1>ALLGREEN</h1>
+        </div>
+        <div class="newPost">
+            <div class="infoUser">
+                <div class="imgUser">
+                    <img src="/TelaPrincipal/img/avata.jpeg" alt="" class="imgUser">
+                    <p>NameUser</p>
+                </div>
+                <form action="#" class="fromPost">
+                    <textarea name="textarea" placeholder="Vamos mudar o mundo?" required></textarea>
+                    <div class="iconsAndButton">
+                        <div class="icons">
+                            <label for="gifInput" class="btnFileForm">
+                                <img src="/TelaPrincipal/img/imgPost/GIF.png" alt="Adicionar um gif">
+                            </label>
+                            <input type="file" id="gifInput" accept="image/gif" style="display: none;">
+                        </div>
+                        <button type="submit" class="btnSubmitForm">Publicar</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+        <!-- Adicione a classe gifContainer ao elemento que contém a imagem GIF e o botão de exclusão -->
+        <div class="gifContainer">
+            <img src="" alt="GIF" class="gifDisplay" style="display: none;" id="GIFDISPLAY">
+            <button type="button" class="removeButton" id="removeGif">&times;</button>
+        </div>
+    </main>
+
+
+    <main id="mensagens">
+        <div class="chat-content">
+            <div class="content-sidebar">
+                <div class="content-sidebar-title">Conversas</div>
+                <form action="" class="content-sidebar-form">
+                    <input type="search" class="content-sidebar-input">
+                    <button type="submit" class="content-sidebar-submit">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                    </button>
+                </form>
+            </div>
+        </div>
+        <div class="message-list">
+            <ul class="content-message-list">
+                <li class="content-message-title">Mensagens Recentes</li>
+                <li class="content-list-message-focus">
+                    <a href="#">
+                        <img class="content-message-img" src="img/avata.jpeg" alt="Profile Image">
+                        <span class="content-message-info">
+                            <span class="content-message-name">Alguém</span>
+                            <span class="content-message-text">Ele enviou isto então veja o que eu falei pra ele</span>
+                        </span>
+                        <span>
+                            <span class="content-message-unread">4</span>
+                            <span class="content-message-time">12:35</span>
+                        </span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </main>
+    
+
+    <main id="sac">
+        <div class="titlesac">
+            <h1 class="Logo-SAC">
+                ALLGREEN
+            </h1>
+        </div>
+
+        <div class="links">
+            <div class="email">
+                <img src="img/imgLinks/gmail.png" alt="" class="img-email">
+                <p class="Email"><a href="mailto:johnpazzz01@gmail.com">E-mail</a></p>
+            </div>
+        </div>
+    </main>
+
+    <script src="/TelaPrincipal/JS/Main.js"></script>
+
+</body>
+
+</html>

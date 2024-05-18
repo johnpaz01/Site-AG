@@ -1,0 +1,593 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: serif;
+}
+
+body {
+    min-height: 100vh;
+
+    background-color: #1b563cfe;
+    display: flex;
+}
+
+main {
+    padding: 20px;
+
+}
+
+#sidebar {
+    display: flex;
+    flex-direction: column;
+    background-color: #10291efe;
+    height: 100vh;
+    justify-content: space-between;
+    border-radius: 0px 18px 18px 0px;
+    position: relative;
+    transition: all .6s;
+    min-height: 82px;
+}
+
+#sidebar_content {
+    padding: 12px;
+
+}
+
+
+#user {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin-bottom: 30px;
+}
+
+#user_avatar {
+    width: 50px;
+    height: 50px;
+    border-radius: 20px;
+
+}
+
+#user_infos {
+    display: flex;
+    flex-direction: column;
+    color: antiquewhite;
+}
+
+#user_infos span:last-child {
+    color: #6b6b6b;
+    font-size: 15px;
+}
+
+#side_items {
+    padding-top: 25px;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    list-style: none;
+}
+
+.side-item #extra {
+    font-size: 500px;
+}
+
+.side-item {
+    padding: 14px;
+    cursor: pointer;
+    border-radius: 8px;
+
+}
+
+
+.side-item.active {
+    background-color: #4990cffe
+}
+
+
+.side-item:hover:not(.active) {
+    background-color: #1b563cfe;
+}
+
+.side-item.active a {
+    color: #243427fe;
+}
+
+.side-item a {
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: rgb(232, 250, 215);
+}
+
+.side-item a i {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 20px;
+    height: 20px;
+
+}
+
+#logout {
+    border-top: 1px solid #1b563cfe;
+    padding: 12px;
+}
+
+#logout_btn {
+    border: none;
+    padding: 12px;
+    font-size: 14px;
+    display: flex;
+    color: antiquewhite;
+    gap: 20px;
+    align-items: center;
+    border-radius: 8px;
+    text-align: start;
+    cursor: pointer;
+    background: transparent;
+}
+
+#open_btn {
+    position: absolute;
+    top: 25px;
+    right: -17px;
+    background-color: #4990cffe;
+    color: antiquewhite;
+    border-radius: 100%;
+    width: 30px;
+    height: 30px;
+    border: none;
+    cursor: pointer;
+}
+
+#open_btn_icon {
+    transition: transformer .3s ease;
+}
+
+.open-sidebar #open_btn_icon {
+    transform: rotate(180deg);
+}
+
+.item-description {
+    width: 0px;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    transition: width .6s;
+    height: 0px;
+    font-size: 22px;
+}
+
+#sidebar.open-sidebar {
+    min-width: 15%;
+}
+
+#sidebar.open-sidebar .item-description {
+    width: 150px;
+    height: auto;
+}
+
+#sidebar.open-sidebar .side-item a {
+    justify-content: flex-start;
+    gap: 14px;
+}
+
+/* Estilos para a seção principal de início */
+#sac,
+.publi {
+    text-align: center;
+    /* Centraliza horizontalmente o texto */
+    margin-left: auto;
+    /* Move o texto para o centro horizontal */
+    margin-right: auto;
+    /* Move o texto para o centro horizontal */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 0 20px;
+    /* Adiciona espaçamento horizontal */
+}
+
+/* Estilos para o formulário de postagem */
+.publi .newPost {
+    padding-top: 80px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 500px;
+    /* Define a largura máxima do formulário */
+    width: 100%;
+    /* Garante que o formulário ocupe toda a largura disponível */
+}
+
+/* Estilos para a imagem do usuário e o nome */
+.publi .newPost .infoUser .imgUser {
+    display: flex;
+    align-items: center;
+}
+
+.publi .newPost .infoUser .imgUser img {
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+}
+
+.publi .newPost .infoUser .imgUser p {
+    margin-left: 10px;
+    font-size: 16px;
+    color: rgb(236, 241, 218);
+}
+
+/* Estilos para o formulário de postagem */
+.publi .newPost .fromPost {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.publi .newPost .fromPost textarea {
+    background-color: #3c4f3d;
+    color: antiquewhite;
+    width: 500px;
+    height: 200px;
+    margin: 15px 0;
+    padding: 20px;
+    border-radius: 15px;
+    font-size: 20px;
+    border: 0.5px solid rgb(255, 255, 255);
+    resize: none;
+}
+
+.publi .newPost .fromPost textarea::placeholder {
+    color: rgba(250, 235, 215, 0.311);
+}
+
+/* Estilos para a label que funciona como botão de arquivo */
+.publi .newPost .infoUser .btnFileForm {
+    width: 45px;
+    height: 45px;
+    background: antiquewhite;
+    color: black;
+    border: none;
+    border-radius: 20px;
+    padding-bottom: 5px;
+    margin-bottom: 10px;
+    /* Adiciona margem inferior */
+    display: inline-block;
+    /* Garante que a label não ocupe toda a largura */
+}
+
+/* Estilos para a imagem dentro da label */
+.publi .newPost .infoUser .btnFileForm img {
+    padding-top: 10px;
+    width: 50%;
+    height: auto;
+}
+
+/* Estilos para o botão de envio */
+.publi .newPost .infoUser .btnSubmitForm {
+    padding-top: 10px;
+    width: 100%;
+    height: 50px;
+    font-size: 25px;
+    background: antiquewhite;
+    color: black;
+    border: none;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    margin-bottom: 20px;
+    /* Adiciona margem inferior */
+}
+
+/* Estilos para quando os botões são hover */
+.publi .newPost .infoUser .btnSubmitForm:hover,
+.publi .newPost .infoUser .btnFileForm:hover {
+    background-color: rgb(23, 92, 6);
+    color: antiquewhite;
+}
+
+.Logo-SAC,
+.publi .logo h1 {
+    color: #fff;
+    /* Cor do texto */
+    font-size: 25px;
+    text-shadow: 0 0 5px #00ff00, 0 0 10px #00ff00, 0 0 20px #00ff00, 0 0 40px #00ff00, 0 0 80px #00ff00, 0 0 90px #00ff00, 0 0 100px #00ff00;
+    /* Sombra neon verde */
+    text-align: center;
+    /* Centraliza horizontalmente o texto */
+    margin-left: auto;
+    /* Move o texto para o centro horizontal */
+    margin-right: auto;
+    /* Move o texto para o centro horizontal */
+}
+
+
+.gifContainer {
+    position: relative;
+}
+
+.removeButton {
+
+    position: absolute;
+    top: 0;
+    right: 0;
+    background: transparent;
+    border: none;
+    color: red;
+    font-size: 50px;
+    margin-right: 70px;
+}
+
+
+.gifContainer #GIFDISPLAY {
+    width: 50%;
+    height: auto;
+    margin-left: 7rem;
+}
+
+.titlesac {
+    padding-top: 5rem;
+}
+
+.links {
+    padding: 10rem;
+    justify-content: center;
+    display: block;
+    position: relative;
+}
+
+.AGProfile a,
+.email a {
+    padding: 1rem;
+    text-decoration: none;
+    color: antiquewhite;
+    font-size: 50px;
+}
+
+.AGProfile {
+    padding-top: 4rem;
+    /* Adiciona uma margem de 20 pixels entre os links */
+}
+
+
+.AGProfile a:hover,
+.email a:hover {
+    text-decoration: underline;
+    color: rgb(64, 205, 188);
+}
+
+.email {
+    display: flex;
+    align-items: center;
+}
+
+
+.chat-content {
+    display: flex;
+    padding-left: 1rem;
+}
+
+.content-sidebar-title {
+    font-size: 25px;
+    align-items: center;
+    display: flex;
+    color: rgb(232, 250, 215);
+}
+
+
+.content-sidebar-input {
+    width: 10rem;
+    height: 20px;
+    border-radius: 10px;
+    background-color: transparent;
+    border: none;
+    border: 2px solid rgba(255, 255, 255, .2);
+    color: antiquewhite;
+    padding: 5px; 
+}
+
+.content-sidebar-submit {
+    background-color: transparent;
+    border: none;
+    border-radius: 10px;
+    height: 2rem;
+    width: 2rem;
+    color: antiquewhite;
+
+}
+.content-sidebar-submit:hover{
+    cursor: pointer;
+    color:#60cf65;
+}
+
+
+
+
+/*inicio lista mensagens*/
+.content-message-list {
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+.content-message-list > li {
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+    
+}
+#mensagens {
+    background-color: #2c2f33; /* Cor de fundo geral */
+}
+
+.content-message-list > li > a {
+    display: flex;
+    align-items: center;
+    color: antiquewhite;
+    text-decoration: none;
+    width: 100%;
+}
+
+.content-message-img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-right: 10px;
+}
+
+.content-message-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex-grow: 1;
+}
+
+.content-message-name {
+    display: block;
+    font-size: 16px;
+    padding: 2px 0;
+    font-weight: bold;
+    color: #fff;
+}
+
+.content-message-text {
+    width: 120px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    font-size: 12px;
+    color: rgb(168, 163, 156);
+}
+
+.content-message-unread,
+.content-message-time {
+    display: block;
+    font-size: 12px;
+    color: rgb(168, 163, 156);
+}
+
+.content-message-title {
+    padding: 10px;
+    font-size: 18px;
+    font-weight: bold;
+    color: antiquewhite;
+}
+
+.content-list-message-focus:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.message-list:hover {
+    cursor: pointer;
+}
+
+
+
+/* Media query para ajustar o layout em telas menores */
+@media screen and (max-width: 768px) {
+    .publi .newPost {
+        max-width: 90%;
+        /* Define uma largura máxima menor para telas menores */
+    }
+
+    #sidebar.open-sidebar .item-description {
+        width: 150px;
+        font-size: 16px;
+        height: auto;
+    }
+
+    .open-sidebar {
+        visibility: false;
+    }
+
+    .publi .newPost .fromPost textarea {
+        background-color: #3c4f3d;
+        color: antiquewhite;
+        width: 100%;
+        height: 150px;
+        margin: 15px 0;
+        padding: 20px;
+        border-radius: 15px;
+        font-size: 20px;
+        border: 0.5px solid rgb(255, 255, 255);
+        resize: none;
+    }
+
+    #side_items {
+        font-size: 16px;
+        padding-top: 25px;
+        display: flex;
+        flex-direction: column;
+        gap: 8px;
+        list-style: none;
+    }
+
+    .publi .logo h1 {
+        margin-left: 2px;
+        color: #fff;
+        /* Cor do texto */
+        font-size: 15px;
+        text-shadow: 0 0 5px #00ff00, 0 0 10px #00ff00, 0 0 20px #00ff00, 0 0 40px #00ff00, 0 0 80px #00ff00, 0 0 90px #00ff00, 0 0 100px #00ff00;
+        /* Sombra neon verde */
+    }
+
+    .gifContainer #GIFDISPLAY {
+        width: 50%;
+        height: auto;
+        margin-left: 50px;
+    }
+
+    .links {
+        padding: 1rem;
+        /* Reduz o padding ainda mais para telas menores */
+    }
+
+
+    .email a {
+        font-size: 16px;
+        padding-top: 2rem;
+
+        /* Tamanho do texto ainda menor para telas menores */
+    }
+
+
+    .content-sidebar-title {
+        font-size: 1rem;
+    }
+
+
+    #mensagens {
+        width: 5rem; /* Ajusta a largura do bloco mensagens */
+    }
+
+    .content-sidebar-title,
+    .content-sidebar-form,
+    .content-message-info,
+    .content-message-unread,
+    .content-message-time,
+    .content-message-title {
+        display: none; /* Esconde o texto em dispositivos móveis */
+    }
+
+    .content-message-img {
+        margin-right: 0; /* Remove o espaçamento à direita da imagem */
+        width: 3rem;
+    }
+
+    .content-message-list > li {
+        justify-content: center; /* Centraliza as imagens */
+        padding: 10px 0; /* Ajusta o padding para centralizar */
+    }
+
+
+
+}

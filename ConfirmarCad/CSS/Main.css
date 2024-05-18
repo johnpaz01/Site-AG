@@ -1,0 +1,125 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500&family=Open+Sans:wght@300;400;500;600&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
+}
+
+body {
+    background: url('../img/Fundo.jpg') no-repeat center/cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.sidebar {
+    height: 350px;
+    width: 525px;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: antiquewhite;
+    border-radius: 45px;
+    padding: 30px 40px;
+    border: 2px solid rgba(255, 255, 255, .2);
+    backdrop-filter: blur(20px);
+    box-shadow: 0 0 10px rgba(0, 0, 0, .2);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.sidebar .title {
+    font-size: 25px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.sidebar .input-box {
+    width: 100%;
+    margin-bottom: 25px;
+    position: relative;
+}
+
+.input-box input {
+    width: 100%;
+    height: 100%;
+    background: transparent;
+    border: none;
+    outline: none;
+    border: 3px solid rgba(255, 255, 255, 0.2);
+    border-radius: 45px;
+    color: antiquewhite;
+    font-size: 16px;
+    text-align: center;
+}
+
+.input-box input::placeholder {
+    color: antiquewhite;
+}
+
+.input-box i {
+    position: absolute;
+    right: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 15px;
+}
+
+.sidebar .label {
+    text-align: center;
+    color:  #fff;
+}
+
+.label a {
+    text-decoration: none;
+    color: antiquewhite;
+}
+
+.label a:hover {
+    cursor: pointer;
+    color: rgb(103, 216, 139);
+    text-decoration: underline;
+}
+
+.sidebar #return, .sidebar #confirm {
+    width: 45%;
+    height:  45px;
+    background: antiquewhite;
+    border: none;
+    outline: none;
+    border-radius: 40px;
+    box-shadow: 0 0 10px rgba(0,0,0,.1);
+    cursor: pointer;
+    color: #333;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+
+
+@media screen and (max-width: 768px) {
+    .sidebar {
+        width: 90%;
+        max-width: 400px; /* Define uma largura máxima para a barra lateral */
+    }
+
+    .sidebar #return, .sidebar #confirm {
+        width: 100%; /* Os botões ocupam toda a largura da barra lateral */
+    }
+}
+
+/* Estilos para telas muito pequenas, como smartphones */
+@media screen and (max-width: 480px) {
+  body{
+    padding-left: 38px;
+  }
+    .sidebar {
+        padding: 20px; /* Reduz o preenchimento */
+    }
+
+    .sidebar .title {
+        font-size: 20px; /* Reduz o tamanho do título */
+    }
+}
