@@ -16,7 +16,7 @@ document.addEventListener('DOMContentLoaded', function() {
         // Verifica se usuário e senha são iguais a "2305" e "index", respectivamente
         if (usuario === '2305' && senha === '2305') {
             // Redireciona para o arquivo HTML desejado
-            window.location.href = '../../TelaPrincipal/Main.html';
+            window.location.href = 'https://johnpaz01.github.io/Site-AG/TelaPrincipal/Main.html';
         } else {
             // Se as credenciais estiverem erradas, exiba uma mensagem de erro
             alert('Credenciais inválidas. Tente novamente.');
@@ -36,7 +36,7 @@ document.addEventListener('DOMContentLoaded', function() {
         event.preventDefault();
         
         // Redireciona para a página desejada
-        window.location.href = '../../Cadastro/Main.html';
+        window.location.href = 'https://johnpaz01.github.io/Site-AG/Cadastro/Main.html';
     });
 });
 

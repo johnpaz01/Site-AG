@@ -12,7 +12,7 @@ document.addEventListener('DOMContentLoaded', function() {
         console.log("Botão clicado!"); // Saída para verificar se o evento de clique está sendo detectado
         
         // Redireciona para a página desejada
-        window.location.href = '../../Login/Main.html';
+        window.location.href = 'https://johnpaz01.github.io/Site-AG/Login/Main.html';
     });
 });
 
@@ -42,7 +42,7 @@ function handleFormSubmit(event) {
         };
 
         // Redirecionar para outra página (substitua 'outra_pagina.html' pelo URL desejado)
-        window.location.href = '../../TelaPrincipal/Main.html';
+        window.location.href = 'https://johnpaz01.github.io/Site-AG/TelaPrincipal/Main.html';
         // Redirecionar para outra página
     } else {
         alert('Por favor, preencha todos os campos obrigatórios.'); // Exibir mensagem de alerta se algum campo estiver vazio

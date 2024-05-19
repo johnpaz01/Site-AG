@@ -8,7 +8,7 @@
 }
 
 body {
-    background: url('../img/Fundo.jpg') no-repeat center/cover;
+    background: url('https://johnpaz01.github.io/Site-AG/ConfirmarCad/img/Fundo.jpg') no-repeat center/cover;
     display: flex;
     justify-content: center;
     align-items: center;
