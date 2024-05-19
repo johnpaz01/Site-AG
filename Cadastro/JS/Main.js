@@ -42,7 +42,7 @@ function handleFormSubmit(event) {
         };
 
         // Redirecionar para outra página (substitua 'outra_pagina.html' pelo URL desejado)
-        window.location.href = 'https://johnpaz01.github.io/Site-AG/TelaPrincipal/Main.html';
+        window.location.href = 'https://johnpaz01.github.io/Site-AG/ConfirmarCad/Main.html';
         // Redirecionar para outra página
     } else {
         alert('Por favor, preencha todos os campos obrigatórios.'); // Exibir mensagem de alerta se algum campo estiver vazio

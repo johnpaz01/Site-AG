@@ -85,8 +85,8 @@ body {
 }
 
 .sidebar #return, .sidebar #confirm {
-    width: 45%;
-    height:  45px;
+    width: 120px;
+    height:  65px;
     background: antiquewhite;
     border: none;
     outline: none;

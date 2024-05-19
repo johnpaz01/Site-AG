@@ -3,7 +3,7 @@ document.getElementById('open_btn').addEventListener('click', function() {
 });
 
 document.getElementById('logout').addEventListener('click', function() {
-    window.location.href = '../../Login/Main.html';
+    window.location.href = 'https://johnpaz01.github.io/Site-AG/Login/Main.html';
 });
 
 document.addEventListener('DOMContentLoaded', function() {
