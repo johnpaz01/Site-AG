@@ -260,14 +260,10 @@ main {
     /* Garante que a label não ocupe toda a largura */
 }
 
-/* Estilos para a imagem dentro da label */
-.publi .newPost .infoUser .btnFileForm img {
-    padding-top: 10px;
-    width: 50%;
-    height: auto;
-}
+
 
 /* Estilos para o botão de envio */
+
 .publi .newPost .infoUser .btnSubmitForm {
     padding-top: 10px;
     width: 100%;
@@ -286,11 +282,15 @@ main {
 }
 
 /* Estilos para quando os botões são hover */
+
 .publi .newPost .infoUser .btnSubmitForm:hover,
 .publi .newPost .infoUser .btnFileForm:hover {
+    cursor: pointer;
     background-color: rgb(23, 92, 6);
     color: antiquewhite;
 }
+
+
 
 .Logo-SAC,
 .publi .logo h1 {
@@ -423,6 +423,8 @@ main {
     
 }
 #mensagens {
+    display: flex;
+    height: 100vh;
     background-color: #2c2f33; /* Cor de fundo geral */
 }
 
@@ -489,6 +491,9 @@ main {
 .message-list:hover {
     cursor: pointer;
 }
+
+
+
 
 
 
