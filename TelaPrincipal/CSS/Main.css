@@ -421,12 +421,15 @@ main {
     padding: 10px;
     border-bottom: 1px solid #ddd;
     
-}
-#mensagens {
+}#mensagens {
     display: flex;
-    height: 100vh;
-    background-color: #2c2f33; /* Cor de fundo geral */
 }
+
+.left, .right {
+    flex: 1;
+    margin-right: 20px;
+}
+
 
 .content-message-list > li > a {
     display: flex;
@@ -493,9 +496,11 @@ main {
 }
 
 
-
-
-
+#message .message-list.content-message-img{
+width: 45px;
+height: 45px;
+border-radius: 50%;
+}
 
 /* Media query para ajustar o layout em telas menores */
 @media screen and (max-width: 768px) {

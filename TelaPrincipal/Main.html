@@ -159,50 +159,57 @@
 
 
     <main id="mensagens">
-        <div class="chat-content">
-            <div class="content-sidebar">
-                <div class="content-sidebar-title">Conversas</div>
-                <form action="" class="content-sidebar-form">
-                    <input type="search" class="content-sidebar-input">
-                    <button type="submit" class="content-sidebar-submit">
-                        <i class="fa-solid fa-magnifying-glass"></i>
-                    </button>
-                </form>
+        <div class="left">
+            <div class="chat-content">
+                <div class="content-sidebar">
+                    <div class="content-sidebar-title">Conversas</div>
+                    <form action="" class="content-sidebar-form">
+                        <input type="search" class="content-sidebar-input">
+                        <button type="submit" class="content-sidebar-submit">
+                            <i class="fa-solid fa-magnifying-glass"></i>
+                        </button>
+                    </form>
+                </div>
+            </div>
+            <div class="message-list">
+                <ul class="content-message-list">
+                    <li class="content-message-title">Mensagens Recentes</li>
+                    <li class="content-list-message-focus">
+                        <a href="#">
+                            <img class="content-message-img"
+                                src="https://johnpaz01.github.io/Site-AG/TelaPrincipal/img/avata.jpeg"
+                                alt="Profile Image">
+                            <span class="content-message-info">
+                                <span class="content-message-name">Alguém</span>
+                                <span class="content-message-text">Ele enviou isto então veja o que eu falei pra
+                                    ele</span>
+                            </span>
+                            <span>
+                                <span class="content-message-unread">4</span>
+                                <span class="content-message-time">12:35</span>
+                            </span>
+                        </a>
+                    </li>
+                </ul>
             </div>
         </div>
-        <div class="message-list">
-            <ul class="content-message-list">
-                <li class="content-message-title">Mensagens Recentes</li>
-                <li class="content-list-message-focus">
-                    <a href="#">
-                        <img class="content-message-img"
-                            src="https://johnpaz01.github.io/Site-AG/TelaPrincipal/img/avata.jpeg" alt="Profile Image">
-                        <span class="content-message-info">
-                            <span class="content-message-name">Alguém</span>
-                            <span class="content-message-text">Ele enviou isto então veja o que eu falei pra ele</span>
-                        </span>
-                        <span>
-                            <span class="content-message-unread">4</span>
-                            <span class="content-message-time">12:35</span>
-                        </span>
-                    </a>
-                </li>
-            </ul>
-        </div>
-<!-- aqui a tela se divide de novo a side bar que mostra as conversas  e aconversa em si
+        <!-- aqui a tela se divide de novo a side bar que mostra as conversas  e aconversa em si
 
     | SideBar | - | Lista Conversas class| - | Conversa aberta(inicio da convesa) class conversetion|
 
 -->
         <!-- Inicio conversa -->
-        <div class="conversation">
-            <div class="conversation-top">
-                <button type="button" class="conversation-back"><i class="fa-solid fa-arrow-left-long"></i></button>
-                <div class="conversation-user">
-                    <img class="conversation-user-img" src="https://johnpaz01.github.io/Site-AG/TelaPrincipal/img/avata.jpeg" alt="">
-                    <div>
-                        <div class="conversation-user-name">Alguem</div>
-                        <div class="conversation-user-status">Online</div>
+        <div class="rigth">
+            <div class="conversation">
+                <div class="conversation-top">
+                    <button type="button" class="conversation-back"><i class="fa-solid fa-arrow-left-long"></i></button>
+                    <div class="conversation-user">
+                        <img class="conversation-user-img"
+                            src="https://johnpaz01.github.io/Site-AG/TelaPrincipal/img/avata.jpeg" alt="">
+                        <div>
+                            <div class="conversation-user-name">Alguem</div>
+                            <div class="conversation-user-status">Online</div>
+                        </div>
                     </div>
                 </div>
             </div>
