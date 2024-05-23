@@ -498,11 +498,15 @@ main {
 }
 
 
-#message .message-list.content-message-img{
-width: 45px;
-height: 45px;
-border-radius: 50%;
+.content-message-img {
+    width: 30px; /* Defina a largura desejada */
+    height: 30px; /* Defina a altura desejada */
+    border-radius: 50%; /* Mantém a imagem redonda */
+    object-fit: cover; /* Garante que a imagem cubra o espaço designado */
+    margin-right: 10px; /* Ajuste o espaçamento conforme necessário */
 }
+
+
 
 /* Media query para ajustar o layout em telas menores */
 @media screen and (max-width: 768px) {
